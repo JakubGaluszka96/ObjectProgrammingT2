@@ -1,0 +1,55 @@
+<diagram program="umletino" version="14.3.0"><zoom_level>10</zoom_level><element><id>UMLClass</id><coordinates><x>0</x><y>230</y><w>210</w><h>120</h></coordinates><panel_attributes>Sklep
+--
++przychody: float
++wydatki: float
++saldo: float
+--
++sprzedaj(ksiazka&amp; nazwa), void
++kup(ksiazka&amp; nazwa) , void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>140</x><y>500</y><w>240</w><h>230</h></coordinates><panel_attributes>Księgarnia
+--
+-IloscKsiazek: int
+-SumaTomow: int
++czynne: bool
+--
++OtworzKsiegarnie():  void
++ZamknijKsiegarnie(): void
++WyświetlStan(): void
++kupKsiazke(ksiazka&amp; nazwa) : void
++SprzedajKsiazke(ksiazka&amp; nazwa): void
++odczyt(): void
++zapis(): void
+Destruktor:
++Ksiegarnia();
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>340</y><w>180</w><h>180</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;10;150;160;150;160;160</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>0</y><w>210</w><h>90</h></coordinates><panel_attributes>Pomiszczenie
+--
++cena za wynajem: float
+--
++Wynajmij(), void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>90</x><y>81</y><w>30</w><h>170</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;10;150</additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>1</y><w>210</w><h>190</h></coordinates><panel_attributes>Artykuł
+--
++CenaKup: float
++CenaSprzedaj; float
+--
++getCenaSprzedaj()
++getCenaKup()
++ZmienCenaKup(), void
++ZmienCeneSprzedaj(), void
++WyswietlCeny(), void
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>370</x><y>231</y><w>400</w><h>190</h></coordinates><panel_attributes>Książka
+--
++tytul: string
++IloscTomow: int
+--
+Konstruktory:
++ksiazka()
++ksiazka(string tytul, int IloscTomow, float CenaKup, float CenaSprzedaj)
++ksiazka(ksiazka &amp;x)
+Destruktor:
+ksiazka()
+Setter:
++ZmienTytul: void
+
+</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>460</x><y>181</y><w>30</w><h>70</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>10;10;10;50</additional_attributes></element><element><id>Relation</id><coordinates><x>240</x><y>411</y><w>260</w><h>110</h></coordinates><panel_attributes>lt=&lt;..</panel_attributes><additional_attributes>240;10;240;80;10;80;10;90</additional_attributes></element></diagram>
